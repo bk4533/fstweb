@@ -1,0 +1,368 @@
+*{ box-sizing:border-box;}
+body{
+    margin:0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.text-center{
+    text-align:center;
+}
+.text-right{
+    text-align:right;
+}
+.container{
+    width:1200px;
+    /* 블록박스 가운데 정렬 */
+    margin-left:auto;
+    margin-right:auto;
+}
+.row{
+    margin-left:-10px;
+    margin-right:-10px;
+}
+.col-4{
+    width: 33.333334%;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.col-60{
+    width: 60%;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.col-40{
+    width: 40%;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.pt-400{
+    padding-top: 400px;
+}
+
+/********* HEADER ********/
+header{
+    height:90px;
+    background-color:#F1E3C4;
+    padding-bottom:15px;
+}
+header a.left{
+    color:#81725F;
+    text-decoration:none;
+    display:block;
+    float:left;
+    margin-top:50px;
+    margin-right: 50px;
+    font-weight:600;
+}
+header a span.material-symbols-outlined{
+    font-size:18px;
+    vertical-align:top;
+    margin-left:15px;
+}
+.logo h1, 
+.logo p{
+    margin:0;
+}
+.logo h1 a{
+    color: #81725F;
+    text-decoration: none;
+}
+.logo h1{
+    letter-spacing:4px;
+    margin-top:15px;
+}
+.logo p{
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing:3px;
+    color: #81725F;
+}
+.right-top{
+    padding-top:10px;
+    text-align:right;
+}
+.right-top a{
+    text-decoration:none;
+    font-size:14px;
+    font-weight:300;
+    color:#81725F;
+    padding-right:15px;
+    padding-left:15px;
+    border-right:1px solid #d3c2ab;
+}
+.tabs{
+    float:right;
+    font-size:14px;
+    font-weight:300;
+    color:#81725F;
+    cursor:pointer;
+    line-height:14px;
+    padding-left:15px;
+    position:relative;
+}
+
+.tabs-on{
+    background: #d3c2ab;
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.tabs-on p{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ab977c;
+}
+
+.tabs-on ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+
+}
+
+.tabs-on ul li {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.tabs-on ul li a{
+    text-align: left;
+    padding: 0;
+    color: #fff;
+}
+
+.tabs-on ul li a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.tabs:first-child{
+    padding-right:15px;
+}
+.tabs span{
+    vertical-align:middle;
+    
+}
+
+.right-bottom{
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.right-bottom a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #666;
+    margin-left: 45px;
+    float: right;
+}
+
+.right-bottom a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #666;
+    margin-top: 15px;
+    display: none;
+}
+
+.right-bottom a:hover::after{
+    display: block;
+}
+
+/**************************HERO****************************/
+.hero{
+    width: 100%;
+    height: 650px;
+    background: url(../images/bedroom-g402225894_1920.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.hero h2 small{
+    background-color: #F1E3C4;
+    color: #444;
+    margin-left: 15px;
+    font-size: 16px;
+    padding: 3px 8px;
+    
+    
+}
+
+.hero h1 {
+    font-variant: small-caps;
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    font-size: 58px;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button.btn-link{
+    background-color: transparent;
+    border: 8px solid #F1E3C4;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+/*           gallery      */
+.special h1{
+    font-size: 45px;
+    border-bottom: 1px solid #81725F;
+    padding-bottom: 15px;
+    color: black !important;
+    text-decoration: none;
+}
+.special p{
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #81725F;
+}
+.plus{
+    text-align: right;
+}
+.type{
+    width: 1200px;
+    float: left;
+    display: block;
+}
+.type h1{
+    margin: 0;
+    font-size: 13px;
+    position: relative;
+    top:18px;
+    left: 13px;
+}
+.type h2{
+    position: relative;
+    left: 13px;
+    margin-bottom: 0;
+}
+.type h3{
+    position: relative;
+    top:18px;
+    left: 13px;
+    margin-top: 0;
+}
+.type1{
+    float: left;
+    width: 786px;
+    margin-right: 20px;
+}
+.type1 ul{
+    list-style: none;
+    padding-left: 0px;
+     
+}
+.type1 ul li{
+    float: left;
+}
+.type2{
+    float: right;
+}
+.type2 ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0;
+}
+
+
+
+
+.gallery1{
+    background: url(../images/gallery1.jpg);
+    text-align: left;
+    padding: 0;
+    color: #fff;
+    height: 300px;
+    margin-bottom: 20px;
+    background-position-x: 21px;
+    background-position-y: -154px;
+    background-size: 905px;
+
+    
+}
+.gallery2{
+    background: url(../images/gallery2.jpg);
+    text-align: left;
+    padding: 0;
+    color: #fff;
+    width: 383px;
+    height: 200px;
+    margin: 0 20px 0 0;
+    background-position-x: -66px;
+    background-position-y: -88px;
+    background-size: 586px;
+}
+.gallery3{
+    background: url(../images/gallery3.jpg);
+    text-align: left;
+    padding: 0;
+    color: #fff;
+    width: 383px;
+    height: 200px;
+    background-position-x: -40px;
+    background-position-y: -30px;
+    background-size: 445px;
+}
+.gallery4{
+    background: url(../images/gallery4.jpg);
+    text-align: left;
+    padding: 0;
+    color: #fff;
+    height: 200px;
+    margin-bottom: 20px;
+        background-position-x: -40px;
+    background-position-y: -30px;
+    background-size: 445px;
+}
+.gallery5{
+    background: url(../images/gallery5.jpg);
+    text-align: left;
+    padding: 0;
+    color: #fff;
+    height: 300px;
+    background-position-x: -48px;
+    background-position-y: -137px;
+    background-size: 460px;
+}
+
